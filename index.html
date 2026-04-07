@@ -4,62 +4,314 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Formulário de Adoção</title>
+
+<style>
+
+/* FUNDO */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff914d, #ffd166);
+    margin: 0;
+}
+
+/* CAIXA CENTRAL */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* TÍTULO */
+h2 {
+    text-align: center;
+    color: #ff6b00;
+}
+
+/* IMAGEM */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* LABEL */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* INPUTS */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* RADIO */
+.radio-group {
+    margin-top: 5px;
+}
+
+/* BOTÃO */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff6b00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e65c00;
+}
+
+/* RESULTADO */
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background: #eaffea;
+    border-left: 5px solid green;
+    border-radius: 8px;
+}
+
+</style>
+
 </head>
 
 <body>
 
-<h2>Formulário de Adoção</h2>
+<div class="container">
+
+<h2> Formulário de Adoção</h2>
+
+
+<img src="<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Adoção</title>
+
+<style>
+
+/* FUNDO */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff914d, #ffd166);
+    margin: 0;
+}
+
+/* CAIXA CENTRAL */
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* TÍTULO */
+h2 {
+    text-align: center;
+    color: #ff6b00;
+}
+
+/* IMAGEM */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* LABEL */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* INPUTS */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* RADIO */
+.radio-group {
+    margin-top: 5px;
+}
+
+/* BOTÃO */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #ff6b00;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e65c00;
+}
+
+/* RESULTADO */
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background: #eaffea;
+    border-left: 5px solid green;
+    border-radius: 8px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>🐶 Formulário de Adoção</h2>
+
+<!-- IMAGEM DO CACHORRO -->
+<img src="https://images.unsplash.com/photo-1583511655826-05700442b31b" alt="Cachorro fofo">
 
 <form id="formAdocao">
 
 <label>Nome completo:</label>
-<input type="text" id="nome"><br>
+<input type="text" id="nome">
 
 <label>Email:</label>
-<input type="email" id="email"><br>
+<input type="email" id="email">
 
 <label>Telefone:</label>
-<input type="text" id="telefone"><br>
+<input type="text" id="telefone">
 
 <label>CPF:</label>
-<input type="text" id="cpf"><br>
+<input type="text" id="cpf">
 
 <label>Idade:</label>
-<input type="number" id="idade"><br>
+<input type="number" id="idade">
 
 <label>Cidade:</label>
-<input type="text" id="cidade"><br>
+<input type="text" id="cidade">
 
 <label>Tipo de moradia:</label>
 <select id="moradia">
 <option value="">Selecione</option>
 <option value="casa">Casa</option>
 <option value="apartamento">Apartamento</option>
-</select><br>
+</select>
 
 <label>Possui quintal?</label>
-<input type="radio" name="quintal" value="sim">Sim
-<input type="radio" name="quintal" value="nao">Não<br>
+<div class="radio-group">
+<input type="radio" name="quintal" value="sim"> Sim
+<input type="radio" name="quintal" value="nao"> Não
+</div>
 
 <label>Já teve pet?</label>
-<input type="radio" name="pet" value="sim">Sim
-<input type="radio" name="pet" value="nao">Não<br>
+<div class="radio-group">
+<input type="radio" name="pet" value="sim"> Sim
+<input type="radio" name="pet" value="nao"> Não
+</div>
 
 <label>Horas sozinho por dia:</label>
-<input type="number" id="horas"><br>
+<input type="number" id="horas">
 
 <label>Motivo da adoção:</label>
-<textarea id="motivo"></textarea><br>
+<textarea id="motivo"></textarea>
 
 <label>
 <input type="checkbox" id="termo"> Aceito o termo de responsabilidade
-</label><br>
+</label>
 
 <button type="submit">Enviar</button>
 
 </form>
 
 <div id="resultado"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>"https://www.petlove.com.br/dicas/shih-tzu" alt="Cachorro fofo">
+
+<form id="formAdocao">
+
+<label>Nome completo:</label>
+<input type="text" id="nome">
+
+<label>Email:</label>
+<input type="email" id="email">
+
+<label>Telefone:</label>
+<input type="text" id="telefone">
+
+<label>CPF:</label>
+<input type="text" id="cpf">
+
+<label>Idade:</label>
+<input type="number" id="idade">
+
+<label>Cidade:</label>
+<input type="text" id="cidade">
+
+<label>Tipo de moradia:</label>
+<select id="moradia">
+<option value="">Selecione</option>
+<option value="casa">Casa</option>
+<option value="apartamento">Apartamento</option>
+</select>
+
+<label>Possui quintal?</label>
+<div class="radio-group">
+<input type="radio" name="quintal" value="sim"> Sim
+<input type="radio" name="quintal" value="nao"> Não
+</div>
+
+<label>Já teve pet?</label>
+<div class="radio-group">
+<input type="radio" name="pet" value="sim"> Sim
+<input type="radio" name="pet" value="nao"> Não
+</div>
+
+<label>Horas sozinho por dia:</label>
+<input type="number" id="horas">
+
+<label>Motivo da adoção:</label>
+<textarea id="motivo"></textarea>
+
+<label>
+<input type="checkbox" id="termo"> Aceito o termo de responsabilidade
+</label>
+
+<button type="submit">Enviar</button>
+
+</form>
+
+<div id="resultado"></div>
+
+</div>
 
 <script src="script.js"></script>
 
